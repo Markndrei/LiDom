@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+@font-face {
+    font-family: 'Milker';
+    src: url('fonts/Milker.otf') format('otf'),
+}
+
+body{
+    height: 100vh;
+    background-color:#2B4553;
+}
+nav{
+    display: flex;
+    background-color:transparent;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+ul{
+    list-style: none;
+    align-items: center;
+    float: right;
+}
+a{
+    text-decoration: none;
+    text-transform:uppercase;
+    padding: 30px;
+    color: black;
+    font-family: Helvetica;
+}
+.griddings{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+}
+.left-container{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.right-container{
+    background-color: #FDF0D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 230px 0 0 230px;
+}
+
+p{
+    text-align: center;
+}
+
+.left-container .left{
+    font-size: 30px;
+    width: 50%;
+    margin-left: -20%;
+    color: white;
+}
+.autoType{
+    font-size: 30px;
+    color: #FDF0D5;
+}
+.searchForm{
+    position: relative;
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: -20%;
+}
+.searchField{
+    border-radius: 30px;
+    text-align: left;
+    padding: 10px 30px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    width:350px;
+}
+.search-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+.search-icon {
+    height: 100%;
+    max-height: 24px;
+    vertical-align: middle;
+    color: #ccc;
+  }
+
+  .right-container h1{
+    font-family: 'Milker';
+    font-size: 120px;
+    margin-top: -10%;
+  }
+  .right-container p{
+    margin-top: 4%;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+
+  button.explore {
+    width: 12rem;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    margin-top: 6%;
+  }
+  button.explore .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #2B4553;
+    border-radius: 1.625rem;
+  }
+  button.explore .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  button.explore .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  button.explore .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+  }
+  button.explore .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #2B4553;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  button:hover .circle {
+    width: 100%;
+  }
+  button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+  }
+  button:hover .button-text {
+    color: #fff;
+  }

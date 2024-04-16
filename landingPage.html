@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landingPage.css">
+    <title>LIDOM</title>
+</head>
+<body>
+    <div class="container-landing">
+        <div class="navbar">
+            <nav>
+                <a href="landingPage.php"><img src="#"></a>
+                <ul>
+                    <li>
+                        <a href="#" class="affLib">Affiliated Libs</a>
+                        <a href="#" class="about">About</a>
+                        <a href="index.php #form-container sign-up" class="Signup"> Sign Up </a>
+                        <a href="index.php #form-container sign-in" class="Login">Log in </a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        <div class="griddings">
+            <div class="left-container">
+                <p class="left">Find your perfect match: <span class="autoType"></span></p>
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                <form class="searchForm">
+                    <input type="text" name placeholder="Search..." class="searchField"></input>
+                    <button type="submit" class="search-button">
+                        <img src="icons/search.png" alt="Search" class="search-icon" />
+                    </button>
+                </form>
+            </div>
+            <div class="right-container">
+                <h1>LIDOM</h1>
+                <p class="right">Fall in love with a story, one recommendation at a time.</p>
+                <button class="explore">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                        <span class="button-text">Explore</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var typed = new Typed(".autoType",{
+        strings: ["Book", "Journal","Magazine", "Research", "Reference",
+               "Newspaper", "Article", "Maps", "Encyclopedias", "Bible", "Database"],
+        typeSpeed: 150, 
+        backSpeed: 150,
+        loop: true
+    })
+</script>
+</html>
